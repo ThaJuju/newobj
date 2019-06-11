@@ -18,7 +18,7 @@ AddEventHandler('newobj:idcarte', function()
 	if distance ~= -1 and distance <= 3.0 then
 		TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(player))
 			else
-		ESX.ShowNotification('No players nearby')
+		ESX.ShowNotification('Aucun joueur à proximité')
 		end
 end)
 
@@ -31,7 +31,7 @@ AddEventHandler('newobj:dricarte', function()
 	if distance ~= -1 and distance <= 3.0 then
 		TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(player), 'driver')
 	  else
-		ESX.ShowNotification('No players nearby')
+		ESX.ShowNotification('Aucun joueur à proximité')
 	  end
 end)
 
@@ -44,6 +44,6 @@ AddEventHandler('newobj:armecarte', function()
 	if distance ~= -1 and distance <= 3.0 then
 		TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(player), 'weapon')
 			else
-		ESX.ShowNotification('No players nearby')
+		ESX.ShowNotification('Aucun joueur à proximité')
 	end
 end)
